@@ -1,0 +1,14 @@
+{
+  "name": "league-of-trash",
+  "version": "1.0.0",
+  "description": "League of Legends ranking website",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jose Fernando Lopez Fernandez",
+  "license": "MIT"
+}

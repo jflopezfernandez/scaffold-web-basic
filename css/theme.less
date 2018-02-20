@@ -1,0 +1,132 @@
+
+@import "components/_typography";
+@import "components/_variables";
+
+
+/** Base */
+body {
+  background: @primary-background;
+  font-family: @body-copy;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  color: @primary-text;
+}
+
+ul,
+ol {
+
+}
+
+li {
+
+}
+
+a, a:link, a:visited {
+
+}
+
+a:hover {
+
+}
+
+p {
+
+}
+
+hr {
+
+}
+
+
+/** Layout Components
+ *
+ *  @import "components/_badges.less";
+ *  @import "components/_typography.less";
+ *  @import "components/_tables.less";
+ *
+ */
+
+@import "components/_alert";
+@import "components/_buttons";
+@import "components/_navbar";
+@import "components/_well";
+
+.footer {
+  margin-top: (@padding * 6);
+  padding-bottom: (@padding * 6);
+  padding-top: @padding;
+  border-top: @border-size @border-color @border-type;
+  color: @grey;
+}
+
+img.main-avatar {
+  width: 100%;
+  height: auto;
+
+  .round-corners;
+}
+
+.sidebar-left h2 {
+  margin-top: (@margin * 1.5);
+  margin-bottom: (@margin * 1.5);
+  line-height: 0;
+}
+
+.sidebar-left li {
+  margin-bottom: (@margin - 0.5);
+}
+
+.sidebar-left li i {
+  margin-right: 5px;
+}
+
+.content-feed h3 {
+  margin-top: 0;
+  margin-bottom: (@margin - 0.5);
+}
+
+img.avatar {
+  .round-corners;
+}
+
+.feed-meta {
+  font-size: (@font-size - 0.25);
+}
+
+.feed-meta ul {
+  margin-bottom: 0;
+}
+
+.sidebar-right .well div {
+  margin-bottom: @margin;
+}
+
+.sidebar-right .well div p {
+  margin-bottom: 0;
+}
+
+.sidebar-right h5 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: (@margin * 1.5);
+  color: @heading-text;
+}
+
+
+/** States
+ *
+ *  @import "components/_alerts.less";
+ *  @import "components/_form-validation.less";
+ *
+ */
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: @primary-link-color;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: @white;
+  }
+}
